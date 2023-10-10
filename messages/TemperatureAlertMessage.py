@@ -1,4 +1,3 @@
-# messages/TemperatureAlertMessage.py
 from uagents import Model
 from pydantic import Field
 

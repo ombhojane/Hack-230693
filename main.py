@@ -70,7 +70,6 @@ def temperature_alert_agent(interval, location, min_temp, max_temp, api_key):
     @agent.on_message
     async def handle_message(ctx: Context, message: TemperatureData):
         if message.schema_digest == EXPECTED_SCHEMA_DIGEST:
-            # Process the message as usual
             current_temperature = message.temperature
             display_current_temperature(location, current_temperature)
         else:

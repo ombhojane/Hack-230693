@@ -15,7 +15,7 @@ class KeyValue(BaseModel):
 
     class Config:
         json_encoders = {
-            Json: lambda v: v,  # Use a custom encoder for JSON serialization
+            Json: lambda v: v, 
         }
 
 

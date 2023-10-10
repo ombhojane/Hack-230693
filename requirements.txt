@@ -2,3 +2,4 @@ uagents
 requests
 pydantic
 emails
+openai

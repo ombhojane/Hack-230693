@@ -8,7 +8,7 @@ import os
 
 
 # Define your OpenWeather API key here
-openweather_api_key = os.environ.get("OPENWEATHER_API_KEY")
+openweather_api_key = st.secrets("OPENWEATHER_API_KEY")
 
 # List of weather conditions and icons
 weather_icons = {
@@ -92,7 +92,8 @@ def fetch_weather_condition(location, api_key):
         return None
 
 def generate_suggestions(location, current_temperature, min_temp_threshold, max_temp_threshold, weather_condition):
-    openai.api_key = "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"
+    
+    openai.api_key = st.secrets["openai_api_key"]
 
     if min_temp_threshold <= current_temperature <= max_temp_threshold:
         prompt = f"Provide suggestions for someone in {location} where it's {current_temperature}°C and {weather_condition}."

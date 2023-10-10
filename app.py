@@ -5,10 +5,10 @@ import emails
 from emails.template import JinjaTemplate as T
 import openai
 import os
-
+import secrets
 
 # Define your OpenWeather API key here
-openweather_api_key = st.secrets("OPENWEATHER_API_KEY")
+openweather_api_key = st.secrets["OPENWEATHER_API_KEY"]
 
 # List of weather conditions and icons
 weather_icons = {

@@ -4,6 +4,8 @@
 
 The Personalized Weather Suggestions App is a Streamlit-based application that provides personalized weather-related suggestions based on the user's preferred location, current temperature, and weather conditions. It utilizes the OpenWeather API for weather data and OpenAI's GPT-3 for generating personalized suggestions. It's a friend for humans, pre-inform them about weather & temperature conditions, give personalized recommendations so that they can live freely as they already got notified!
 
+Project is Deployed on : https://huggingface.co/spaces/ombhojane/Fetch-Alerts
+
 ## How to Run the Project
 
 Follow these instructions to run the project:
